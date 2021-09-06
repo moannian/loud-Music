@@ -1,0 +1,186 @@
+@import "~@/assets/Less/Comment.less";
+
+.Recommend_Ranking {
+    .bottom {
+        display: flex;
+        margin-top: 10px;
+        width: 100%;
+        height: 65vh;
+        background-image: url(~@/assets/img/Recommend/Ranking.png);
+        background-size: 100% 100%;
+        background-position: center;
+
+        overflow: hidden;
+
+        div {
+            flex: 1;
+
+            .box {
+                display: flex;
+                width: 100%;
+                height: 25.1%;
+
+                .left {
+                    position: relative;
+                    border: none;
+
+                    .pic {
+                        position: absolute;
+                        top: 3.3vh;
+                        left: 15.1%;
+
+                        width: 7.1vw;
+                        height: 64%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .right {
+
+                    .title {
+                        margin-top: 20%;
+                        .mixin-fontsize(14px, 18px, black);
+
+                    }
+
+                    .ico {
+                        display: flex;
+                        width: 60%;
+                        height: 30%;
+                        background-color: beige;
+
+                        div {
+                            padding: 1px 4px 1px 4px;
+                        }
+
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 67.9%;
+
+
+                li {
+                    position: relative;
+                    display: flex;
+                    flex: 1;
+                    .mixin-fontsize(2px, 18px, black);
+
+                    .Index {
+                        display: inline-block;
+                        text-align: right;
+                        line-height: 4vh;
+                        width: 10%;
+                        height: 100%;
+                        -webkit-transform: scale(.8);
+                    }
+
+                    .content {
+                        width: 100px;
+                        height: 80%;
+                        padding-left: 7px;
+                        white-space: nowrap;
+                        /* 不换行 */
+                        overflow: hidden;
+                        /* 内容超出宽度时隐藏超出部分的内容 */
+                        text-overflow: ellipsis;
+                        /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+                        .mixin-fontsize(2px, 18px, black);
+
+                        span {
+                            display: block;
+                            text-align: left;
+                            line-height: 3.5vh;
+                            -webkit-transform: scale(.8);
+                            // 设置缩放原点
+                            transform-origin: 0 3.5vh;
+                        }
+
+
+
+                    }
+
+                    .choose {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 10vw;
+                        height: 100%;
+                        background-color: beige;
+
+                        div {
+                            margin: 0 8px 0 8px;
+                            height: 80%;
+                            background-color: beige;
+
+
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    .nochosse {
+                        display: none;
+                    }
+                }
+
+                li:nth-child(-n+3) {
+
+
+                    .Index {
+                        color: red;
+                    }
+                }
+
+
+            }
+
+            .more {
+
+                width: 100%;
+                height: 7%;
+                text-align: right;
+                .mixin-fontsize(4px, 18px, black);
+
+                span {
+                    display: inline-block;
+                    -webkit-transform: scale(.8);
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+
+
+
+            }
+
+
+        }
+
+
+    }
+
+
+
+
+}

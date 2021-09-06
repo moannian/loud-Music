@@ -1,0 +1,127 @@
+@import "~@/assets/Less/Comment.less";
+
+.AppFooter {
+    width: 100%;
+    height: 30vh;
+    background-color: #f2f2f2;
+    font-size: 2px;
+
+    .wrapper-v2 {
+        display: flex;
+        height: 30vh;
+
+        .left_content {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            height: 100%;
+            padding-top: 10px;
+
+
+
+            .protocal {
+                width: 100%;
+                height: 15%;
+
+
+                ul {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+
+                    li {
+                        display: flex;
+                        flex: 1;
+                        justify-content: center;
+                        align-items: center;
+                        height: 50%;
+                        border-right: 1px solid rgb(39, 38, 38, .7);
+                        .mixin-fontsize(4px, 18px, rgba(17, 16, 16, .4));
+
+                        span {
+                            -webkit-transform: scale(.9);
+                        }
+
+                        &:last-child {
+                            border: none;
+                        }
+                    }
+                }
+            }
+
+            .declarant {
+                flex: 1;
+
+                div {
+                    width: 100%;
+                    height: 15%;
+                    margin-top: 10px;
+                    .mixin-fontsize(3px, 18px, rgba(17, 16, 16, .4));
+
+                    span {
+                        -webkit-transform: scale(.5);
+                    }
+                }
+
+
+            }
+        }
+
+        .right_content {
+            position: relative;
+            width: 40%;
+            height: 100%;
+
+            overflow: hidden;
+
+            ul {
+                display: flex;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                height: 40%;
+
+
+                li {
+                    position: relative;
+                    margin-right: 10px;
+                    flex: 1;
+
+                    text-align: center;
+
+
+                    &:last-child {
+                        margin-right: 2px;
+                    }
+
+                    img {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        height: 70%;
+                    }
+
+                    .mixin-fontsize(4px, 18px);
+
+                    span {
+                        position: absolute;
+                        display: block;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 20%;
+                        text-align: center;
+                        font-weight: 100;
+                        color: black;
+                    }
+
+
+
+                }
+            }
+        }
+    }
+}

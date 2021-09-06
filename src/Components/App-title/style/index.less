@@ -1,0 +1,94 @@
+@import "~@/assets/Less/Comment.less";
+
+.AppTitle {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 8vh;
+    padding: 0 10px 0 10px;
+    border-bottom: red solid 0.5vh;
+
+    .title {
+        position: relative;
+        width: 17%;
+        height: 100%;
+
+        line-height: 8vh;
+
+        padding-left: 5.5%;
+
+        h2 {
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 12%;
+                transform: translateY(-50%);
+                content: '';
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border: 5px solid red;
+                border-radius: 50%;
+
+            }
+        }
+    }
+
+    .classly {
+        width: 60%;
+        height: 100%;
+
+
+        li {
+            position: relative;
+            text-align: center;
+            width: 12%;
+            line-height: 8vh;
+            .mixin-fontsize(4px, 18px, gray);
+
+            span {
+                -webkit-transform: scale(.9);
+
+                &:hover {
+                    color: red;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align: right;
+                display: inline-block;
+                width: 1px;
+                height: 2vh;
+                background-color: gray;
+            }
+
+            &:last-child {
+                &::after {
+                    content: '';
+
+                    background-color: transparent
+                }
+            }
+        }
+    }
+
+    .other {
+        flex: 1;
+        height: 100%;
+        text-align: right;
+        line-height: 8vh;
+        .mixin-fontsize(4px, 18px, gray);
+
+        span {
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

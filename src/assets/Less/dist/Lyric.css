@@ -1,0 +1,54 @@
+.Lyric {
+  background-color: #f5f5f5;
+  width: 100%;
+}
+.Lyric .wrapper-v2 {
+  display: flex;
+  border: 1px solid gray;
+  border-top: none;
+  border-bottom: none;
+}
+.Lyric .wrapper-v2 .lyric_left {
+  padding-right: 3vw;
+  padding-left: 3vw;
+  padding-top: 10vh;
+  width: 60vw;
+  border-right: 1px solid gray;
+}
+.Lyric .wrapper-v2 .lyric_left .top {
+  display: flex;
+}
+.Lyric .wrapper-v2 .lyric_left .top .top_left {
+  width: 40vh;
+}
+.Lyric .wrapper-v2 .lyric_left .top .top_left .bg {
+  position: relative;
+  width: 27vh;
+  height: 27vh;
+  border-radius: 50%;
+  background-image: url('../img/Lyric/record.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.Lyric .wrapper-v2 .lyric_left .top .top_left .bg .pic {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: red;
+}
+.Lyric .wrapper-v2 .lyric_left .top .top_left .bg .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.Lyric .wrapper-v2 .lyric_left .top .top_right {
+  flex: 1;
+}
+.Lyric .wrapper-v2 .lyric_right {
+  flex: 1;
+  color: red;
+}

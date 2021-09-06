@@ -1,0 +1,107 @@
+.loop {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+
+    .bigbg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper-v2 {
+        position: relative;
+        display: flex;
+
+        .left {
+            overflow: hidden;
+            position: relative;
+            width: 78%;
+            height: 35vh;
+            background-color: skyblue;
+
+            ul {
+                position: absolute;
+                left: 0;
+                top: 0;
+                float: left;
+                height: 100%;
+                background-color: blue;
+
+                li {
+                    float: left;
+                    width: 62.4vw;
+                    height: 35vh;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .dot {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 4vh;
+                text-align: center;
+
+                span {
+                    display: inline-block;
+                    width: 20px;
+                    height: 3px;
+                    background-color: #cccc;
+                    margin-left: 10px;
+                }
+
+                .current {
+                    background-color: white;
+                }
+            }
+        }
+
+        .right {
+            flex: 1;
+
+            img {
+                width: 100%;
+                height: 35vh;
+            }
+        }
+
+        button {
+            opacity: .6;
+            width: 2.5vw;
+            height: 5vh;
+            border: none;
+            background-color: transparent;
+
+            img {
+                width: 100%;
+                height: 5vh;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .left-btn {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-100%, -50%);
+        }
+
+        .right-btn {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(100%, -50%);
+        }
+    }
+}

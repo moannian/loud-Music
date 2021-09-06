@@ -1,0 +1,19 @@
+.mixin-fontsize(@oneSize, @twoSize, @color: rgb(229, 229, 235)) {
+    @media (max-width:1100px) {
+        span {
+            font-size: @oneSize;
+            text-align: center;
+            color: @color;
+
+        }
+    }
+
+    @media (min-width:1100px) {
+        span {
+            font-size: @twoSize;
+            text-align: center;
+            color: @color;
+
+        }
+    }
+}

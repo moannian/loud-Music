@@ -1,0 +1,375 @@
+@import "~@/assets/Less/Comment.less";
+
+.AppPlay {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 2vh;
+
+    .showPlay {
+        transition: all .3s;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 7vh;
+
+        background-color: rgba(0, 0, 0, .3);
+
+        .wrapper-v2 {
+            display: flex;
+
+
+            .operate {
+                display: flex;
+                width: 9vw;
+                height: 7vh;
+                padding: 5px 5px 5px 5px;
+
+                div {
+                    position: relative;
+                    flex: 1;
+
+
+                    .next,
+                    .prev {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 2vw;
+                        height: 3.5vh;
+
+                    }
+
+                    .play {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 2.5vw;
+                        height: 4vh;
+
+                    }
+                }
+
+
+            }
+
+            .schedule {
+                display: flex;
+                width: 50vw;
+                height: 7vh;
+                padding: 5px 5px 5px 5px;
+
+
+                .left {
+                    width: 2.5vw;
+                    height: 100%;
+                    background-color: salmon;
+                }
+
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+
+
+                    .top {
+                        display: flex;
+                        flex: 1;
+                        align-items: center;
+
+                        .mixin-fontsize(4px, 16px, #423d3dfb);
+
+                        span {
+                            margin-right: 13px;
+                            -webkit-transform: scale(.8);
+                        }
+                    }
+
+                    .bottom {
+                        position: relative;
+                        display: flex;
+                        flex: 1;
+                        align-items: center;
+
+                        .process {
+                            width: 90%;
+                            height: 1.5vh;
+                            border-radius: 1.5vh;
+                            background-color: rgb(233, 228, 238);
+
+                            .cover {
+                                position: relative;
+                                height: 100%;
+                                width: 0;
+                                background-color: red;
+
+                                .dot {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 100%;
+                                    transform: translate(-50%, -50%);
+                                    width: 2vh;
+                                    height: 2vh;
+                                    background-color: red;
+                                    border-radius: 50%;
+
+                                }
+                            }
+                        }
+
+                        .timer {
+                            flex: 1;
+                            .mixin-fontsize(4px, 18px, #fdf1f1fb);
+                        }
+
+
+                    }
+                }
+            }
+
+            .choose {
+                display: flex;
+                width: 10vw;
+                height: 7vh;
+                padding: 5px 5px 5px 5px;
+
+                div {
+                    position: relative;
+                    display: flex;
+                    flex: 1;
+
+
+                    div {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 1.5vw;
+                        height: 3vh;
+                    }
+                }
+
+            }
+
+            .other {
+                display: flex;
+                flex: 1;
+                height: 7vh;
+                padding: 5px 5px 5px 5px;
+
+
+                div {
+                    position: relative;
+                    flex: 1;
+
+                    .voice,
+                    .loop,
+                    .playList {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 1.5vw;
+                        height: 3vh;
+
+
+                        .mask {
+                            position: absolute;
+                            width: 75vw;
+                            height: 35vh;
+                            background-color: rgba(0, 0, 0, .5);
+                            margin-top: -19.5vh;
+                            top: -17.5vh;
+                            left: -72.2vw;
+
+                            .List {
+
+                                display: flex;
+                                flex-direction: column;
+                                float: left;
+                                width: 70%;
+                                height: 100%;
+
+
+                                header {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    width: 100%;
+                                    height: 5.5vh;
+                                    border-bottom: 2px solid white;
+
+                                    .left {
+                                        text-align: left;
+                                        .mixin-fontsize(4px, 18px, #fdf1f1fb);
+
+                                        span {
+                                            -webkit-transform: scale(.9);
+                                        }
+                                    }
+
+                                    .right {
+
+                                        text-align: right;
+                                        .mixin-fontsize(4px, 18px, #fdf1f1fb);
+
+                                        span {
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+
+                                .wrapper {
+                                    position: relative;
+                                    flex: 1;
+                                    overflow: auto;
+
+                                    ul {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        padding: 0;
+                                        width: 100%;
+
+
+
+                                        li {
+
+                                            width: 100%;
+                                            height: 4vh;
+
+
+                                            .current {
+                                                float: left;
+                                                width: 4%;
+                                                height: 100%;
+                                                transform: scale(.7);
+                                                transform-origin: 0 2vh;
+
+                                            }
+
+                                            .song {
+                                                float: left;
+                                                width: 45%;
+                                                height: 100%;
+                                                .mixin-fontsize(4px, 18px, #fdf1f1fb);
+
+                                                span {
+                                                    float: left;
+                                                    -webkit-transform: scale(.9);
+                                                    transform-origin: 0 7vh;
+                                                }
+                                            }
+
+                                            .ico {
+                                                opacity: 0;
+                                                display: flex;
+                                                float: left;
+                                                width: 20%;
+                                                height: 100%;
+
+
+                                                .add,
+                                                .share,
+                                                .down,
+                                                .delete {
+
+                                                    flex: 1;
+                                                    margin-left: 8px;
+                                                    transform: scale(.7);
+                                                    transform-origin: 0 2vh;
+                                                }
+                                            }
+
+                                            .sonename {
+                                                float: left;
+                                                width: 15%;
+                                                height: 100%;
+                                                .mixin-fontsize(4px, 18px, #fdf1f1fb);
+
+                                                span {
+                                                    float: left;
+                                                    -webkit-transform: scale(.9);
+                                                    transform-origin: 0 7vh;
+                                                }
+                                            }
+
+                                            .time {
+                                                float: left;
+                                                width: 10%;
+                                                height: 100%;
+
+                                                .mixin-fontsize(4px, 18px, #fdf1f1fb);
+
+                                                span {
+                                                    float: left;
+                                                    -webkit-transform: scale(.9);
+                                                    transform-origin: 0 7vh;
+                                                }
+                                            }
+
+                                            .link {
+                                                float: left;
+                                                width: 6%;
+                                                height: 100%;
+                                                transform: scale(.7);
+                                                transform-origin: 0 2vh;
+                                            }
+
+                                            &:hover {
+                                                background-color: rgba(0, 0, 0, .3);
+                                            }
+
+                                            &:hover .ico {
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            .lyrics {
+                                display: flex;
+                                flex-direction: column;
+                                width: 30%;
+                                height: 100%;
+                                float: left;
+
+                                header {
+                                    width: 100%;
+                                    height: 5.5vh;
+                                    text-align: center;
+                                    line-height: 5.5vh;
+                                    border-bottom: 2px solid white;
+                                    .mixin-fontsize(10px, 16px, white);
+                                }
+
+                                .content {
+                                    flex: 1;
+                                    background-color: rgba(0, 0, 0, .7);
+
+                                }
+                            }
+
+                        }
+
+                        .close {
+                            display: none;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+
+
+}

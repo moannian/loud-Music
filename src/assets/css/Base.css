@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: '微软雅黑', '宋体', '黑体';
+}
+
+.wrapper-v1 {
+    margin: auto;
+    width: 90vw;
+}
+
+.wrapper-v2 {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+li {
+    float: left;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
